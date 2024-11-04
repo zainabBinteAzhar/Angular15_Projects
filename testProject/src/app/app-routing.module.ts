@@ -6,6 +6,7 @@ import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { ServiceComponent } from './service/service.component';
 
 const routes: Routes = [
+  {path:"", redirectTo:"/home", pathMatch:"full"},
   {path:"home", component:HomeComponent},
   {path:"services", component:ServicesComponent},
   {path:"services/:id", component:ServiceComponent},

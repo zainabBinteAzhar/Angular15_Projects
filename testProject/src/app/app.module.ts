@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { ServiceComponent } from './service/service.component';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -14,13 +15,10 @@ import { ServiceComponent } from './service/service.component';
     HomeComponent,
     ServicesComponent,
     NoPageFoundComponent,
-    ServiceComponent
+    ServiceComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, AuthModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

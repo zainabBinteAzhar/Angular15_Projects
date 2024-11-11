@@ -1,0 +1,18 @@
+<nav
+  class="bg-slate-950 text-white flex justify-between p-2 px-10 font-semibold text-lg"
+>
+  <a class="hover:cursor-pointer hover:scale-105" routerLink="home">Home</a>
+
+  <div *ngIf="isLoggedIn" class="flex space-x-4">
+    <a class="hover:cursor-pointer hover:scale-105" routerLink="/dashboard"
+      >Dashboard</a
+    >
+  </div>
+
+  <button
+    class="bg-stone-500 p-2 rounded-lg hover:cursor-pointer hover:scale-105"
+    (click)="onButtonClick()"
+  >
+    {{ isLoggedIn ? "Logout" : "Login" }}
+  </button>
+</nav>

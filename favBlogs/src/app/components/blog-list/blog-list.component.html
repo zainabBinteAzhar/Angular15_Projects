@@ -1,0 +1,12 @@
+<div *ngFor="let article of articles">
+  <div class="bg-blue-200 border-blue-950 border-2 rounded-lg p-2 m-2">
+    <div class="flex justify-between">
+      <h2 class="font-bold mb-3">"{{ article.title }}"</h2>
+      <input 
+      type="checkbox" 
+      [checked]="article.liked" 
+      (change)="toggleLike(article.id)">
+    </div>
+    <p>{{ article.content }}</p>
+  </div>
+</div>

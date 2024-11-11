@@ -1,0 +1,27 @@
+<div class="login-left">
+  <h2>Login! 👋</h2>
+  <p>Let's get started!</p>
+  <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+    <label for="email">Email</label>
+    <input
+      [(ngModel)]="userObj.email"
+      type="email"
+      id="email"
+      name="email"
+      placeholder="test@atheros.ai"
+      required
+    />
+    <label for="password">Password</label>
+    <input
+      [(ngModel)]="userObj.password"
+      type="password"
+      id="password"
+      name="password"
+      placeholder="******"
+      required
+    />
+    <button type="submit" class="btn btn-signin" >Sign In
+      
+    </button>
+  </form>
+</div>

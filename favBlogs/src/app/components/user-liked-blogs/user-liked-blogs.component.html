@@ -1,0 +1,18 @@
+<div *ngIf="likedBlogs.length > 0; else noLikedBlogs">
+    <h1>USER'S LIKED BLOGS</h1>
+    <div *ngFor="let article of likedBlogs">
+      <div class="bg-blue-200 border-blue-950 border-2 rounded-lg p-2 m-2">
+        <div class="flex justify-between">
+          <h2 class="font-bold mb-3">"{{ article.title }}"</h2>
+          <input type="checkbox" [checked]="article.liked" disabled />
+          <!-- Disabled so the user can't uncheck -->
+        </div>
+        <p>{{ article.content}}</p>
+      </div>
+    </div>
+  </div>
+  
+  <ng-template #noLikedBlogs>
+    <p>No liked blogs BY USER yet!</p>
+  </ng-template>
+  

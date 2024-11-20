@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { BlogListComponent } from './components/blog-list/blog-list.component';
 import { UserLikedBlogsComponent } from './components/user-liked-blogs/user-liked-blogs.component';
 import { MyLikedBlogsComponent } from './components/my-liked-blogs/my-liked-blogs.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { MyLikedBlogsComponent } from './components/my-liked-blogs/my-liked-blog
     DashboardComponent,
     BlogListComponent,
     UserLikedBlogsComponent,
-    MyLikedBlogsComponent
+    MyLikedBlogsComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LoginComponent
+    CommonModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

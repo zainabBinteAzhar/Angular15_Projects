@@ -7,10 +7,6 @@ import { Router } from '@angular/router';
 export class AuthService {
 
   constructor(private router:Router) { } 
-
-  //check user is logged in or not by checking token is present in localStorage or not
-  //if not: automatically means, user is not loggedIn else: loggedIn
-
   isLoggedIn(){
     return !!localStorage.getItem("token");
     // !!: return true if found, else false.
@@ -19,8 +15,7 @@ export class AuthService {
   private loggedIn = false;
 
   logout() {
-    this.loggedIn = false; // Implement your logout logic (e.g., clear tokens)
-    // Additional logout logic can be added here
+    this.loggedIn = false; 
     localStorage.removeItem("token");
     this.router.navigate(['/login']);
     

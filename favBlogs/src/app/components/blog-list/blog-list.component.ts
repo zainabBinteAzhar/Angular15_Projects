@@ -58,10 +58,9 @@ export class BlogListComponent {
   loadBlogs(): void {
     const savedBlogs = this.likedBlogsService.getAllBlogs();
     if (savedBlogs.length === 0) {
-      // Initialize blogs only if there is no saved data
       this.likedBlogsService.saveAllBlogs(this.articles);
     } else {
-      // Ensure the blogs data is updated and has the liked state
+      //ensure the blogs data is updated and has the liked state
       this.articles = savedBlogs;
     }
   }

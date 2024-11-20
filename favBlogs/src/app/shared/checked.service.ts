@@ -14,29 +14,28 @@ export class CheckedService {
     return JSON.parse(localStorage.getItem(`blogs_${this.currentUser}`) || '[]');
   }
 
-  // Save all blogs (including liked state) to localStorage
   saveAllBlogs(blogs: any[]): void {
     localStorage.setItem(`blogs_${this.currentUser}`, JSON.stringify(blogs));
   }
 
-  // Toggle the like state for a specific blog
+  //toggle like state for specific blog
   toggleLike(blogId: number): void {
     const blogs = this.getAllBlogs();
     const blog = blogs.find(b => b.id === blogId);
     if (blog) {
-      blog.liked = !blog.liked;  // Toggle the liked state
-      this.saveAllBlogs(blogs);   // Save the updated blogs
+      blog.liked = !blog.liked;  //toggle- liked state
+      this.saveAllBlogs(blogs);   //save updated blogs
     }
   }
 
-  // Get only the liked blogs for the current user
+  //get only the liked blogs for the current user
   getLikedBlogs(): any[] {
     const allBlogs = this.getAllBlogs();
     return allBlogs.filter(blog => blog.liked);
   }
-
+//get liked blogs for the user- as an admin
   getLikedBlogsByUser(userType: string): any[] {
     const allBlogs = JSON.parse(localStorage.getItem(`blogs_${userType}`) || '[]');
-    return allBlogs.filter((blog: { liked: any; }) => blog.liked);
+    return allBlogs.filter((blog:{ liked: any; }) => blog.liked);
   }
 }

@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   userObj: any = {
     email: '',
+    
     password: '',
   };
 

@@ -7,6 +7,7 @@ import { AuthService } from 'src/app/shared/auth.service';
   templateUrl: './navbar.component.html', // Adjust the path as necessary
 })
 export class NavbarComponent implements OnInit {
+
   isLoggedIn: boolean | undefined;
   constructor(private authService: AuthService, private router:Router) {}
 

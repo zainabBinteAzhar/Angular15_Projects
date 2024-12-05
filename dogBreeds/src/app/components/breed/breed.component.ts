@@ -7,7 +7,6 @@ import { DataService } from 'src/app/shared/data.service';
 })
 export class BreedComponent implements OnInit {
   images: any[] = [];
-  isButtonDisabled = false;
 
   constructor(private data: DataService) {}
 
@@ -17,8 +16,6 @@ export class BreedComponent implements OnInit {
     });
   }
   deleteImage(image: any): void {
-    this.isButtonDisabled = true;
-
     this.data.deleteImage(image);
   }
 }

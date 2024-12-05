@@ -9,6 +9,7 @@ import {HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { LoaderComponent } from './components/loader/loader.component';
 import { LoaderInterceptor } from './interceptors/loader.interceptor';
 import { LoaderService } from './shared/loader.service';
+import { ImageInterceptor } from './interceptors/image.interceptor';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,12 @@ import { LoaderService } from './shared/loader.service';
   ],
   providers: [
     LoaderService,
-    { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true }
+    { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ImageInterceptor,
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })

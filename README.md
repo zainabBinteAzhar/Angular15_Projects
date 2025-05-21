@@ -57,7 +57,7 @@ This repository contains **three Angular 15 mini projects**, each focusing on di
 
 ```bash
 # Clone the repository
-git clone https://github.com/zainabBinteAzhar/angular-mini-projects.git
+git clone https://github.com/zainabBinteAzhar/angular_Projects.git
 
 # Navigate to a project directory
 cd DOGbREEDS   # or cd FavBlogs, cd testProject

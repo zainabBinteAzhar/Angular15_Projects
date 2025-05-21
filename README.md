@@ -4,6 +4,19 @@ This repository contains **three Angular 15 mini projects**, each focusing on di
 
 ---
 
+## ⚙️ **Requirements**
+
+- **Angular CLI** v15 or higher  
+- **Node.js** v16 or higher  
+- **npm** (or **yarn**) installed  
+
+---
+
+## 📝 **Notes**
+
+- These are learning/demo projects built to explore different Angular patterns.  
+- You can use them as lightweight starter templates or as part of a learning journey.  
+
 ## 📁 Projects Overview
 
 ### 1. 🐶 DOGbREEDS
@@ -54,21 +67,6 @@ npm install
 
 # Run the development server
 ng serve```
-
----
-
-## ⚙️ **Requirements**
-
-- **Angular CLI** v15 or higher  
-- **Node.js** v16 or higher  
-- **npm** (or **yarn**) installed  
-
----
-
-## 📝 **Notes**
-
-- These are learning/demo projects built to explore different Angular patterns.  
-- You can use them as lightweight starter templates or as part of a learning journey.  
 
 ---
 

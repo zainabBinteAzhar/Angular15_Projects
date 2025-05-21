@@ -47,20 +47,22 @@ This repository contains **three Angular 15 mini projects**, each focusing on di
 git clone https://github.com/zainabBinteAzhar/angular-mini-projects.git
 
 # Navigate to a project directory
-cd DOGbREEDS   # or cd FavBlogs, cd testProject
+cd dogBreeds  # or cd FavBlogs, cd testProject
 
 # Install dependencies
 npm install
 
 # Run the development server
 ng serve
+---
 
-🛠️ Requirements
+## 🛠️ Requirements
 Angular CLI v15+
 
 Node.js v16+
-
-📌 Notes
+---
+## 📌 Notes
 These are learning/demo projects built to explore different Angular patterns.
 
 You can use them as lightweight starter templates.
+---

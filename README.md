@@ -21,7 +21,7 @@ This repository contains **three Angular 15 mini projects**, each focusing on di
 
 > A blog-style app with authentication and role-based access.
 
-**Task Completed:**
+**Tasks Completed:**
 - Authentication flow
 - `authGuard` & `roleGuard` implementation
 - Data services
@@ -44,25 +44,28 @@ This repository contains **three Angular 15 mini projects**, each focusing on di
 
 ```bash
 # Clone the repository
-git clone https://github.com/zainabBinteAzhar/angular-mini-projects.git
+git clone https://github.com/your-username/angular-mini-projects.git
 
 # Navigate to a project directory
-cd dogBreeds  # or cd FavBlogs, cd testProject
+cd DOGbREEDS   # or cd FavBlogs, cd testProject
 
 # Install dependencies
 npm install
 
 # Run the development server
 ng serve
+## ⚙️ **Requirements**
+
+- **Angular CLI** v15 or higher  
+- **Node.js** v16 or higher  
+- **npm** (or **yarn**) installed  
+
 ---
 
-## 🛠️ Requirements
-Angular CLI v15+
+## 📝 **Notes**
 
-Node.js v16+
----
-## 📌 Notes
-These are learning/demo projects built to explore different Angular patterns.
+- These are learning/demo projects built to explore different Angular patterns.  
+- You can use them as lightweight starter templates or as part of a learning journey.  
 
-You can use them as lightweight starter templates.
 ---
+

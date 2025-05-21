@@ -1,64 +1,66 @@
-🧪 Angular 15 Mini Projects
-This repository contains three Angular 15 mini projects, each focusing on different core concepts in Angular development — from state management with RxJS to authentication and routing guards.
+# Angular 15 Mini Projects
 
-📁 Projects Overview
-1. 🐶 DOGbREEDS
-A mini app to browse and manage dog breeds.
+This repository contains **three Angular 15 mini projects**, each focusing on different core concepts in Angular development — from state management with RxJS to authentication and routing guards.
 
-Highlights:
+---
 
-Initialized as dogsBreed
+## 📁 Projects Overview
 
-State management using RxJS BehaviorSubject
+### 1. 🐶 DOGbREEDS
 
-Simple and reactive app structure
+> A mini app to browse and manage dog breeds.
 
-2. ✍️ Fav Blogs
-A blog-style app with authentication and role-based access.
+**Features:**
+- Initialized as `dogsBreed`
+- State management using **RxJS BehaviorSubject**
+- Clean and reactive structure
 
-Completed Tasks:
+---
 
-User authentication
+### 2. ✍️ Fav Blogs
 
-authGuard & roleGuard implementation
+> A blog-style app with authentication and role-based access.
 
-Services to manage data flow
+**Task Completed:**
+- Authentication flow
+- `authGuard` & `roleGuard` implementation
+- Data services
+- Blog filtering using checkboxes
+- Temporary user switching functionality
 
-Blog filtering with checkboxes
+---
 
-Temporary user switching for demo/testing
+### 3. 🧪 testProject
 
-3. 🧪 testProject
-Experimental project initialized for testing purposes, starting with blog auth flow.
+> Experimental project initialized as `1stProject`.
 
-Current Focus:
+**Current Task:**
+- Basic `favBlog` site with authentication
+- Acts as a sandbox for testing auth and routing logic
 
-Basic favBlog site with authentication setup
+---
 
-Acts as a sandbox to test auth features and routing
+## 🚀 Getting Started
 
-🚀 Getting Started
-bash
-Copy
-Edit
-# Clone the repo
+```bash
+# Clone the repository
 git clone https://github.com/zainabBinteAzhar/angular-mini-projects.git
 
-# Navigate to a project folder
-cd dogBreeds  # or FavBlogs, testProject
+# Navigate to a project directory
+cd DOGbREEDS   # or cd FavBlogs, cd testProject
 
 # Install dependencies
 npm install
 
-# Run the app
+# Run the development server
 ng serve
+
 🛠️ Requirements
 Angular CLI v15+
 
 Node.js v16+
 
 📌 Notes
-These projects are for learning and experimentation.
+These are learning/demo projects built to explore different Angular patterns.
 
-You can use them as starter templates for more complex Angular apps.
-
+You can use them as lightweight starter templates.

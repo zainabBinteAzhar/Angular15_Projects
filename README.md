@@ -44,7 +44,7 @@ This repository contains **three Angular 15 mini projects**, each focusing on di
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/angular-mini-projects.git
+git clone https://github.com/zainabBinteAzhar/angular-mini-projects.git
 
 # Navigate to a project directory
 cd DOGbREEDS   # or cd FavBlogs, cd testProject
@@ -53,7 +53,10 @@ cd DOGbREEDS   # or cd FavBlogs, cd testProject
 npm install
 
 # Run the development server
-ng serve
+ng serve```
+
+---
+
 ## ⚙️ **Requirements**
 
 - **Angular CLI** v15 or higher  
